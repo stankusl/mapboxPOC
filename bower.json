@@ -15,7 +15,11 @@
     "angular": "latest",
     "angular-bootstrap": "latest",
     "angular-ui-router": "latest",
-    "angular-sanitize": "latest"
+    "angular-sanitize": "latest",
+    "angular-mapboxgl-directive": "^0.32.3"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "resolutions": {
+    "angular": "1.6.2"
+  }
 }

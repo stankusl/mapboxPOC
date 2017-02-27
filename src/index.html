@@ -13,6 +13,9 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.32.1/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.32.1/mapbox-gl.css' rel='stylesheet' />
+
     <!-- Vendors Styles -->
     <link rel="stylesheet" type="text/css" href="assets/libs/bootstrap/dist/css/bootstrap.min.css">
     <script type="text/javascript" href="assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
@@ -20,6 +23,10 @@
     <!--Libraries-->
     <script type="text/javascript" src="assets/libs/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="assets/libs/angular/angular.min.js"></script>
+    <!-- Mapbox -->
+    <link href="assets/libs/angular-mapboxgl-directive/dist/angular-mapboxgl-directive.css" rel="stylesheet" />
+    <script src="assets/libs/angular-mapboxgl-directive/dist/angular-mapboxgl-directive.min.js"></script>
+
     <script type="text/javascript" src="assets/libs/angular-ui-router/release/angular-ui-router.min.js"></script>
 
     <link rel="stylesheet" type="text/css" href="assets/css/main.css">
@@ -35,8 +42,13 @@
 
     <ui-view></ui-view>
 
-
-
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoiZXhlMSIsImEiOiJjaXpvM3piY2gwMDJ0MzNtZjJqM3NqMXNmIn0.h7m2A7FUuKBekNvQrx2nxQ';
+        // var map = new mapboxgl.Map({
+        //     container: 'map',
+        //     style: 'mapbox://styles/mapbox/streets-v9'
+        // });
+    </script>
 
 
     <!-- <script type="text/javascript" src="assets/libs/ngmap/build/scripts/ng-map.min.js"></script> -->
